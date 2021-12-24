@@ -1,0 +1,15 @@
+@import "partials/variables.scss";
+@import "partials/header.scss";
+@import "partials/scrollbar.scss";
+@import "partials/footer.scss";
+
+// Global styles
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
