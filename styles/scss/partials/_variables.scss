@@ -1,6 +1,12 @@
-$darker-grey: #222;
+// Colours
+$darker-grey: #111;
 $dark-grey: #333;
 $light-grey: #888;
 $lighter-grey: #eee;
+
+// Gradients
 $background-gradient: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
 $text-gradient: linear-gradient(45deg, #30cfd0 0%, #029199 100%);
+
+// Numerical Values
+$header-footer-height: 60px;

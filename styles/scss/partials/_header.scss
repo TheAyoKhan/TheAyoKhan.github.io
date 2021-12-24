@@ -5,7 +5,8 @@
   align-items: center;
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
+  height: $header-footer-height;
   background: $darker-grey;
   color: white;
 

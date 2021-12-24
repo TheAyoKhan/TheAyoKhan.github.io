@@ -1,12 +1,13 @@
 #footer {
+  height: $header-footer-height;
   display: flex;
-  background: $light-grey;
+  background: $dark-grey;
   justify-content: center;
+  align-items: center;
 
   .external-profile-link {
     width: 2rem;
     fill: #fff;
-    margin: 1rem;
 
     &:hover {
       fill: #eee;
