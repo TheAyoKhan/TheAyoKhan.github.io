@@ -1,4 +1,4 @@
-#header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: -webkit-sticky; position: sticky; top: 0; width: 100vw; background: #222; color: white; }
+#header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 60px; background: #222; color: white; }
 
 #header #header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 300px; margin-right: 2em; }
 
@@ -8,17 +8,15 @@
 
 #header #header__title { font-weight: bold; font-size: 2.5rem; }
 
-:root { scrollbar-width: 10px; scrollbar-color: #333; }
-
 ::-webkit-scrollbar { width: 0.5rem; }
-
-::-webkit-scrollbar-track { background: #333; }
 
 ::-webkit-scrollbar-thumb { background: #888; }
 
-#footer { display: -webkit-box; display: -ms-flexbox; display: flex; background: #888; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+::-webkit-scrollbar-track { background: #333; }
 
-#footer .external-profile-link { width: 2rem; fill: #fff; margin: 1rem; }
+#footer { height: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; background: #333; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#footer .external-profile-link { width: 2rem; fill: #fff; }
 
 #footer .external-profile-link:hover { fill: #eee; }
 
