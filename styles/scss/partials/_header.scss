@@ -1,21 +1,32 @@
 #header {
+  // Flexbox
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+
+  // Positioning
   position: sticky;
   top: 0;
+
+  // Dimensions
   width: 100%;
   height: $header-footer-height;
+
+  // Colours
   background: $darker-grey;
   color: white;
+
+  #header__title {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
 
   #header__nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 300px;
-    margin-right: 2em;
+    flex-basis: 250px;
   }
 
   #header__nav a {
@@ -25,10 +36,5 @@
     &:hover {
       color: #aaa;
     }
-  }
-
-  #header__title {
-    font-weight: bold;
-    font-size: 2.5rem;
   }
 }

@@ -2,11 +2,16 @@
 $darker-grey: #111;
 $dark-grey: #333;
 $light-grey: #888;
-$lighter-grey: #eee;
+$text-white: #f5f5f5;
+
+// Palette
+$royal-blue: #316b83;
+$blue-grey: #6d8299;
+$khaki: #8ca1a5;
+$tan: #d5bfbf;
 
 // Gradients
-$background-gradient: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-$text-gradient: linear-gradient(45deg, #30cfd0 0%, #029199 100%);
+$background-gradient: linear-gradient(45deg, $royal-blue 0%, $blue-grey 100%);
 
 // Numerical Values
 $header-footer-height: 60px;

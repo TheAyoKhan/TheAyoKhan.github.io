@@ -1,11 +1,49 @@
 @import "partials/_variables.scss";
 
-#welcome-section {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  width: 100vw;
+#welcome {
+  // Flexbox
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // Dimensions
+  height: 40vh;
+  width: 100%;
+
+  // Colour
   background-image: $background-gradient;
-  color: #222;
+  color: $text-white;
+
   user-select: none;
+
+  #welcome__greeting {
+    font-size: 4rem;
+  }
+
+  #welcome__name {
+    font-size: 1rem;
+  }
+}
+
+.section:not(#welcome) {
+  margin: 1rem;
+
+  .section__sub-title {
+    font-size: 1.25rem;
+  }
+
+  .section__sub-title::before {
+    content: "→";
+    color: #aaa;
+    margin-right: 1rem;
+  }
+
+  .section__title {
+    margin: 0;
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $royal-blue;
+  }
 }
