@@ -8,13 +8,14 @@
   align-items: center;
 
   // Dimensions
-  height: 40vh;
+  height: 30vh;
   width: 100%;
 
   // Colour
-  background-image: $background-gradient;
-  color: $text-white;
+  background-image: $welcome-gradient;
+  color: $light;
 
+  // Misc
   user-select: none;
 
   #welcome__greeting {
@@ -44,6 +45,6 @@
     margin-left: 1em;
     font-weight: bold;
     font-size: 2rem;
-    color: $royal-blue;
+    color: $storm-gray;
   }
 }

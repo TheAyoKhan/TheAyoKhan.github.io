@@ -14,8 +14,8 @@
   height: $header-footer-height;
 
   // Colours
-  background: $darker-grey;
-  color: white;
+  background: $background-light;
+  color: $text-dark;
 
   #header__title {
     font-weight: bold;
@@ -30,11 +30,6 @@
   }
 
   #header__nav a {
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-      color: #aaa;
-    }
+    color: $text-dark;
   }
 }
