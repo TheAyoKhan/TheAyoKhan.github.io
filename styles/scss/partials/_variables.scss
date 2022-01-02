@@ -4,12 +4,14 @@ $light: #f5f5f5;
 
 // Palette
 $storm-gray: #716f81;
-$turkish-rose: #6d8299;
-$rose-bud: #8ca1a5;
-$sidecar: #d5bfbf;
+$bouquet: #b97a95;
+$blue-lagoon: #7ee8fa;
+$tan: #f2e1c1;
 
 // Gradients
-$welcome-gradient: linear-gradient(45deg, $turkish-rose 0%, $sidecar 100%);
+$welcome-gradient: linear-gradient(45deg, $bouquet 0%, $storm-gray 100%);
+$welcome-gradient: linear-gradient(315deg, $bouquet 0%, $blue-lagoon 100%);
 
 // Numerical Values
 $header-footer-height: 60px;
+$border-radius: 4px;
