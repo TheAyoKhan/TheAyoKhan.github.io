@@ -1,10 +1,14 @@
-@import "partials/_variables.scss";
-@import "partials/_header.scss";
-@import "partials/_scrollbar.scss";
-@import "partials/_footer.scss";
+@use "sass:color";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/scrollbar";
+@import "partials/footer";
+@import "partials/page-content";
 
 // Global styles
 body {
+  min-width: 100%;
+  min-height: 100vh;
   margin: 0;
   font-family: "Lato", sans-serif;
 }
