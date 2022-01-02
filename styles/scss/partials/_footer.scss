@@ -1,7 +1,7 @@
 #footer {
   // Flexbox
   display: flex;
-  background: $background-dark;
+  background: $dark;
   justify-content: center;
   align-items: center;
 
@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    fill: $text-light;
-    color: $text-light;
+    fill: $light;
+    color: $light;
   }
 }
