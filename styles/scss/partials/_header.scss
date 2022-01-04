@@ -16,6 +16,7 @@
   // Colours
   background: $light;
   color: $dark;
+  box-shadow: 0 1px 6px 0 color.adjust($dark, $alpha: -0.12%);
 
   #header__title {
     font-weight: bold;
