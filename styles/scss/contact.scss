@@ -1,0 +1,37 @@
+@use "sass:color";
+@import "partials/_variables.scss";
+
+#get-in-touch {
+  font-size: 1.5em;
+}
+
+#contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-button {
+  // Grid
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // Color
+  color: color.adjust($blue-lagoon, $lightness: -35%);
+  background-color: $light;
+
+  // Dimensions
+  flex: 0 1 300px;
+  aspect-ratio: 5 / 2;
+  border-radius: 4px;
+
+  font-size: 1.25rem;
+
+  box-shadow: 0 0 1px $dark;
+
+  &:hover {
+    background-color: color.adjust($light, $lightness: 2%);
+    text-decoration: none;
+  }
+}
