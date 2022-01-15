@@ -1,83 +1,105 @@
 @import "variables";
 
 .hero-banner {
-  // Flexbox
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	// Flexbox
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-  // Dimensions
-  height: 30vh;
-  width: 100%;
+	// Dimensions
+	height: 30vh;
+	width: 100%;
 
-  // Colour
-  background-color: $bouquet;
-  background-image: $hero-banner-gradient;
-  color: $dark;
+	// Colour
+	background-color: $bouquet;
+	background-image: $hero-banner-gradient;
+	color: $dark;
 
-  // Misc
-  margin-bottom: 2em;
-  user-select: none;
+	// Misc
+	margin-bottom: 2em;
+	user-select: none;
 
-  .hero-banner__title {
-    font-size: 3.5rem;
-  }
+	.hero-banner__title {
+		font-size: 3.5rem;
+	}
 
-  .hero-banner__subtitle {
-    font-size: 1.25rem;
-  }
+	.hero-banner__subtitle {
+		font-size: 1.25rem;
+	}
 }
 
-#page-information {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.section__subtitle {
+	font-size: 1.15rem;
 
-  .section {
-    margin: 1em;
+	// Before arrow
+	&::before {
+		content: "→";
+		font-size: 1.25rem;
+		color: $bouquet;
+		margin-right: 0.5em;
+	}
+}
 
-    // Flexbox
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 500px;
+.section__title {
+	margin-bottom: 0.5em;
 
-    .section__subtitle {
-      font-size: 1.15rem;
+	// Font
+	font-size: 2rem;
+	font-weight: bold;
 
-      // Before arrow
-      &::before {
-        content: "→";
-        font-size: 1.25rem;
-        color: $bouquet;
-        margin-right: 0.5em;
-      }
-    }
+	// Color
+	color: $storm-gray;
+}
 
-    .section__title {
-      margin-bottom: 0.5em;
+.section__text-content {
+	padding: 1.5em;
+	border-radius: $border-radius;
+	background-color: #eee;
+	box-shadow: 0 0 1px $dark;
+}
 
-      // Font
-      font-size: 2rem;
-      font-weight: bold;
+span {
+	width: auto;
 
-      // Color
-      color: $storm-gray;
-    }
+	&:not(.section__subtitle) {
+		margin-left: 1.75rem;
+	}
+}
 
-    .section__text-content {
-      padding: 1.5em;
-      border-radius: $border-radius;
-      background-color: #eee;
-      box-shadow: 0 0 1px $dark;
-    }
+.boxes-container {
+	display: flex;
+	justify-content: center;
+	flex: 80% 0 1;
+	gap: 1em;
+	color: $dark;
+}
 
-    span {
-      width: auto;
+.box {
+	// Flexbox
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-      &:not(.section__subtitle) {
-        margin-left: 1.75rem;
-      }
-    }
-  }
+	height: 100%;
+	width: 80%;
+	font-size: 1.5rem;
+	padding: 1em;
+	min-width: 200px;
+	background-color: $light;
+
+	transition: 0.1s ease-in-out;
+
+	&.btn:hover {
+		background-color: $dark;
+		color: $light;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.boxes-container {
+		grid-template-columns: 1fr;
+	}
 }
