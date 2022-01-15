@@ -6,6 +6,10 @@
 @import "partials/page-content";
 
 // Global styles
+* {
+	box-sizing: border-box;
+}
+
 body {
 	min-width: 100%;
 	min-height: 100vh;
